@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hentai Archive</title>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/761774366505566209/1214024410911084654/Cattail.png?ex=65f79b57&is=65e52657&hm=7f296f33f4b3758078cf261b0dd05856c2b193536e22ba468a7df66b94e6c234&">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Aura animation */
+        @keyframes aura {
+            0% { box-shadow: 0 0 10px 10px rgba(255, 0, 255, 0.5); }
+            50% { box-shadow: 0 0 20px 20px rgba(255, 0, 255, 0.2); }
+            100% { box-shadow: 0 0 10px 10px rgba(255, 0, 255, 0.5); }
+        }
+
+        body {
+            animation: aura 3s ease-in-out infinite;
+            background: radial-gradient(circle, #243356, #1a1e29, #2b2f42);
+            background-size: 400% 400%;
+            color: #d1d5db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input[type="text"] {
+            height: 48px;
+            border: 2px solid #44337a;
+            border-radius: 30px;
+            background-color: #1f2937;
+            padding: 0 20px;
+            color: #d1d5db;
+            width: 300px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 0 20px 5px rgba(79, 70, 229, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <section class="flex flex-col items-center">
+        <h2 class="text-3xl font-bold mb-8">Check If Your Data Has Been Exposed</h2>
+        <form class="flex items-center">
+            <div class="search-container">
+                <input type="text" class="py-2 px-4 focus:outline-none" placeholder="Enter your email address">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
