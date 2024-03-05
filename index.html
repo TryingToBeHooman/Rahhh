@@ -7,23 +7,36 @@
     <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/761774366505566209/1214024410911084654/Cattail.png?ex=65f79b57&is=65e52657&hm=7f296f33f4b3758078cf261b0dd05856c2b193536e22ba468a7df66b94e6c234&">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Aura animation */
-        @keyframes aura {
-            0% { box-shadow: 0 0 10px 10px rgba(255, 0, 255, 0.5); }
-            50% { box-shadow: 0 0 20px 20px rgba(255, 0, 255, 0.2); }
-            100% { box-shadow: 0 0 10px 10px rgba(255, 0, 255, 0.5); }
-        }
-
         body {
-            animation: aura 3s ease-in-out infinite;
-            background: radial-gradient(circle, #243356, #1a1e29, #2b2f42);
+            background: linear-gradient(-45deg, #6a3771, #723a80, #721a7e, #783a83);
             background-size: 400% 400%;
+            -webkit-animation: GradientAnimation 15s ease infinite;
+            -moz-animation: GradientAnimation 15s ease infinite;
+            animation: GradientAnimation 15s ease infinite;
             color: #d1d5db;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        @-webkit-keyframes GradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @-moz-keyframes GradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes GradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .search-container {
@@ -35,7 +48,7 @@
 
         input[type="text"] {
             height: 48px;
-            border: 2px solid #44337a;
+            border: 2px solid #b970da;
             border-radius: 30px;
             background-color: #1f2937;
             padding: 0 20px;
@@ -48,8 +61,8 @@
         }
 
         input[type="text"]:focus {
-            border-color: #4f46e5;
-            box-shadow: 0 0 20px 5px rgba(79, 70, 229, 0.7);
+            border-color: #c98fff;
+            box-shadow: 0 0 20px 5px rgba(202, 145, 255, 0.7);
         }
     </style>
 </head>
